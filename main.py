@@ -11,10 +11,11 @@ def close():
 #			wordlist.append(i+j)
 #			wordlist.append(i+"."+j)
 
-	file = open("user_wordlist.txt","a")
-	for i in wordlist:
-		if(i != None):
-			file.write(i+"\n")
+        file = open("user_wordlist.txt","a")
+        for i in wordlist:
+                if(i is not None):
+                        if(len(i) != 0):
+                                file.write(i+"\n")
 	file.close()
 	print("Good luck! (user_wordlist.txt)")
 	exit()
